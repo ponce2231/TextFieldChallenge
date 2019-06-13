@@ -19,43 +19,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gl8-c1-iRK">
-                                <rect key="frame" x="16" y="20" width="343" height="128"/>
+                                <rect key="frame" x="16" y="36" width="343" height="180"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your ZIP code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K57-vT-P3t">
-                                        <rect key="frame" x="8" y="0.0" width="335" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amout of Cash" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j9S-eC-Nzn">
+                                        <rect key="frame" x="8" y="73" width="327" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="SRz-oY-pUy"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amout of Cash" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j9S-eC-Nzn">
-                                        <rect key="frame" x="8" y="38" width="335" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unlock to Write" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QPa-RP-pdn">
+                                        <rect key="frame" x="8" y="139" width="259" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="Ohd-AK-LeC"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unlock to Write" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QPa-RP-pdn">
-                                        <rect key="frame" x="8" y="76" width="259" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BHU-yv-A1J">
-                                        <rect key="frame" x="286" y="76" width="49" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BHU-yv-A1J">
+                                        <rect key="frame" x="286" y="139" width="51" height="33"/>
                                     </switch>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your ZIP code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K57-vT-P3t">
+                                        <rect key="frame" x="8" y="12" width="327" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="2DY-CZ-KOY"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="AlW-cY-P8y"/>
+                                    <constraint firstAttribute="trailing" secondItem="K57-vT-P3t" secondAttribute="trailing" constant="8" id="0gc-xI-hHN"/>
+                                    <constraint firstAttribute="trailing" secondItem="BHU-yv-A1J" secondAttribute="trailing" constant="8" id="2s5-cn-VyK"/>
+                                    <constraint firstAttribute="height" constant="180" id="AlW-cY-P8y"/>
+                                    <constraint firstItem="QPa-RP-pdn" firstAttribute="top" secondItem="j9S-eC-Nzn" secondAttribute="bottom" constant="33" id="CGh-pM-cPg"/>
+                                    <constraint firstItem="BHU-yv-A1J" firstAttribute="top" secondItem="j9S-eC-Nzn" secondAttribute="bottom" constant="33" id="Ejv-mU-NL0"/>
+                                    <constraint firstItem="j9S-eC-Nzn" firstAttribute="top" secondItem="K57-vT-P3t" secondAttribute="bottom" constant="28" id="GL6-tb-tki"/>
+                                    <constraint firstAttribute="bottom" secondItem="QPa-RP-pdn" secondAttribute="bottom" constant="8" id="MPb-U2-X5z"/>
+                                    <constraint firstItem="BHU-yv-A1J" firstAttribute="leading" secondItem="QPa-RP-pdn" secondAttribute="trailing" constant="19" id="Mqb-W3-FzI"/>
+                                    <constraint firstItem="QPa-RP-pdn" firstAttribute="leading" secondItem="gl8-c1-iRK" secondAttribute="leading" constant="8" id="Qr0-Q1-Uhf"/>
+                                    <constraint firstItem="K57-vT-P3t" firstAttribute="leading" secondItem="gl8-c1-iRK" secondAttribute="leading" constant="8" id="Tk6-T3-UVh"/>
+                                    <constraint firstItem="K57-vT-P3t" firstAttribute="top" secondItem="gl8-c1-iRK" secondAttribute="top" constant="12" id="U45-kX-XLJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="j9S-eC-Nzn" secondAttribute="trailing" constant="8" id="WTA-zd-k4N"/>
+                                    <constraint firstItem="j9S-eC-Nzn" firstAttribute="leading" secondItem="gl8-c1-iRK" secondAttribute="leading" constant="8" id="jMk-gK-dpM"/>
+                                    <constraint firstAttribute="bottom" secondItem="BHU-yv-A1J" secondAttribute="bottom" constant="8" id="qau-Sp-37t"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gl8-c1-iRK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7AG-Ef-Erp"/>
+                            <constraint firstItem="gl8-c1-iRK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="7AG-Ef-Erp"/>
                             <constraint firstItem="gl8-c1-iRK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TYK-4C-2q9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gl8-c1-iRK" secondAttribute="trailing" constant="16" id="nXo-Hq-5WU"/>
                         </constraints>
