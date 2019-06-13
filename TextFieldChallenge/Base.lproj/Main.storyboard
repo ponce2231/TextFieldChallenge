@@ -21,6 +21,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gl8-c1-iRK">
                                 <rect key="frame" x="16" y="36" width="343" height="180"/>
                                 <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your ZIP code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K57-vT-P3t">
+                                        <rect key="frame" x="8" y="12" width="327" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="2DY-CZ-KOY"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amout of Cash" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j9S-eC-Nzn">
                                         <rect key="frame" x="8" y="73" width="327" height="33"/>
                                         <constraints>
@@ -42,15 +51,6 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BHU-yv-A1J">
                                         <rect key="frame" x="286" y="139" width="51" height="33"/>
                                     </switch>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your ZIP code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K57-vT-P3t">
-                                        <rect key="frame" x="8" y="12" width="327" height="33"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="2DY-CZ-KOY"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -79,6 +79,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cashTextField" destination="j9S-eC-Nzn" id="uGy-kx-oTd"/>
+                        <outlet property="lockSwitch" destination="BHU-yv-A1J" id="dAi-e9-2GC"/>
+                        <outlet property="unlockToWriteTextField" destination="QPa-RP-pdn" id="Rhj-B8-sL5"/>
+                        <outlet property="zipCodeTextField" destination="K57-vT-P3t" id="fKL-Me-uyU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
